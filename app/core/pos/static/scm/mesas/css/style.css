@@ -1,0 +1,64 @@
+/* Background overlay for the modal */
+
+#myModal {
+    display: none;
+    background-color: rgba(22, 21, 21, 0.5);
+    position: fixed;
+    /* Changed from absolute to fixed */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: auto;
+    /* Ensure the whole modal can scroll if needed */
+}
+
+
+/* Container to center the modal content */
+
+.modal-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center vertically */
+    min-height: 100vh;
+    /* Ensure it fills the viewport height */
+}
+
+
+/* Modal content area */
+
+#myModal .modal-content {
+    background-color: white;
+    max-width: 1300px;
+    width: 98%;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    max-height: 90vh;
+    /* Prevent the modal from exceeding viewport height */
+}
+
+
+/* Estilo de las vistas del calendario */
+
+.fc-view {
+    border: 1px solid #0652DD;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+/* Style hover in search products */
+
+.hover-effect {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.hover-effect:hover {
+    background-color: yellow;
+    color: red;
+}
